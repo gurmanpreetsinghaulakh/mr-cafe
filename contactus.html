@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact-US</title>
+    <style>
+        body{
+            font-family:  Courier;
+            margin: 0%;
+            padding: 0%;
+        }
+
+        /* navbar */
+
+        .navbar{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #faebd7;
+
+        }
+        .navbar .name{
+            margin-left: 20px;
+            font-size: 20px;
+            font-weight:200;
+            color: #914F1E;
+        }
+        .navbar .links{
+            list-style: none;
+            display: flex;
+            gap: 30px;
+
+            
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        a:hover{
+            color: white;
+            background-color: #914F1E;
+            font-size: 15px;
+            padding: 4px 4px ;
+            border-radius:13px ;
+
+        }
+        a:active{
+            font-size: 13px;
+        }
+        .navbar .sign-up{
+            margin-right: 20px;
+        }
+        .dropdown{
+            list-style: none;
+            margin-right: 15px;
+            display: none;
+        }
+        .dropdown li .dropdown-menu{
+            position: absolute;
+            right: 20px;
+            
+            display: none;
+            list-style: none;
+            background-color: white;
+            border-radius: 20px;
+            
+            /* box-shadow: 2px 2px 2px 2px black; */
+            
+        }
+        .dropdown .dropdown-menu li{
+            width: 100%;
+        }
+        .dropdown:hover .dropdown-menu {
+        display: block;
+        }
+        @media(max-width:800px){
+
+            .navbar .links,
+            .navbar .sign-up{
+                display: none;
+            }
+            .navbar .dropdown{
+                display: block;
+            }
+        }
+
+
+        /* main */
+        .contact-us{
+            text-align: center;
+        }
+        .contact-us .maps iframe{
+ 
+            border-radius: 40px;
+        }
+        .contact-us a img{
+            height: 40px;
+            border-radius: 20px;
+        }
+
+        /* footer */
+        .footer{
+            margin-top: 10px;
+            height: 300px;
+            border-top-left-radius: 50px;
+            border-top-right-radius:50px ;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            background-color: #faebd7;
+            color: black;
+            
+            
+        }
+        .footer a{
+            color: black;
+        }
+        a:hover{
+            color: white;
+            background-color: #914F1E;
+            font-size: 15px;
+            padding: 4px 4px ;
+            border-radius:13px ;
+
+        }
+        a:active{
+            font-size: 13px;
+        }
+        .footer-content{
+            line-height: 40px;
+            
+        }
+        .footer img{
+            height: 40px;
+            border-radius: 20px;
+            line-height: 20px;
+        }
+
+        .footer .about-us ul li{
+            list-style: none;
+        }
+        .footer .quick-links ul li{
+            list-style: none;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <header>            
+    </div>
+    <div class="navbar">
+        <div class="name">MR. CAFE</div>
+        <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="order.html">Order</a></li>
+            <li><a href="">Pay</a></li>
+            <!-- <li><a href="">Franchising</a></li> -->
+        </ul>
+        <div class="sign-up">
+            <a href="">Sign-up/Login</a>
+        </div>
+        <ul class="dropdown">
+            <li><a href=""><i class="fa-solid fa-bars"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="order.html">Order</a></li>
+                    <li><a href="">Pay</a></li>
+                    <li><a href="">Sign-up/Login</a></li></li>
+                </ul>
+            
+        </ul>
+    </div>
+</header>
+<main>
+    <section class="contact-us">
+        <p><h2>Contact Us Here!</h2></p><hr>
+        <p>Phone no. 1234567891</p>
+        <p>Email : gurmanpreet1664.be23@chitkara.edu.in</p>
+        <p>Address : Chitkara University</p>
+        <p class="maps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3437.1751352098286!2d76.65720287531745!3d30.516086474689523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fc32344a6e2d7%3A0x81b346dee91799ca!2sChitkara%20University!5e0!3m2!1sen!2sin!4v1721630532864!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </p>
+        <a href="https://www.instagram.com/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7PAb6lbrixiJCA8UKelLVwoxCPtaGJ44i7A&s" alt=""></a>
+        <a href="https://github.com/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbqj9Ii13d6hx5a9kyLnC5A8A96LDSaSZv_w&s" alt=""></a>
+        <a href="https://www.facebook.com/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx74vKsfGWQOaORRB__MQNXP0lXXySVrgzGOS1H16o4vYNHsQPtoNsEt9kTWj61Aeb2yk&usqp=CAU" alt=""></a>
+        <a href="https://www.snapchat.com/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW0DVt8MZ0a3sj1Onn2DgjFj7ShZhXefVqlw&s" alt=""></a>
+        <a href="https://x.com/?lang=en"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTATK7hWQUic5Stvfu31OavEG9dWeDHnzlcftAgiAGj4_GcHNO6zYF1BdnyusDRaBUXhDY&usqp=CAU" alt="" ></a>
+        <a href="https://in.linkedin.com/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZgzcYbYoUFzrNoZFvcKeWwZY9jOTRAwI9o8j4bAKPuChP5IHmFT4cFXzGvbdX47ALOPA&usqp=CAU" alt="" href=""></a>
+
+    </section>
+</main>
+
+
+<footer class="footer">
+    <div class="about-us">
+        <h2>About Us</h2>
+        <ul>
+            <li ><a href="">Coffee House</a></li>
+            <li><a href="">Our Company</a></li>
+            <li><a href="">Franchise</a></li>
+        </ul>
+    </div>
+    <div class="quick-links">
+        <h2>Quick-Links</h2>
+        <ul>
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">FAQs</a></li>
+        </ul>
+    </div>
+    <div class="social-media">
+        <h2>Social-media</h2>
+        <a href="https://www.instagram.com/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7PAb6lbrixiJCA8UKelLVwoxCPtaGJ44i7A&s" alt=""></a>
+        <a href="https://github.com/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbqj9Ii13d6hx5a9kyLnC5A8A96LDSaSZv_w&s" alt=""></a>
+        <a href="https://www.facebook.com/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx74vKsfGWQOaORRB__MQNXP0lXXySVrgzGOS1H16o4vYNHsQPtoNsEt9kTWj61Aeb2yk&usqp=CAU" alt=""></a>
+        <a href="https://www.snapchat.com/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW0DVt8MZ0a3sj1Onn2DgjFj7ShZhXefVqlw&s" alt=""></a>
+        <a href="https://x.com/?lang=en"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTATK7hWQUic5Stvfu31OavEG9dWeDHnzlcftAgiAGj4_GcHNO6zYF1BdnyusDRaBUXhDY&usqp=CAU" alt="" ></a>
+        <a href="https://in.linkedin.com/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZgzcYbYoUFzrNoZFvcKeWwZY9jOTRAwI9o8j4bAKPuChP5IHmFT4cFXzGvbdX47ALOPA&usqp=CAU" alt="" href=""></a>
+
+    </div>
+    
+</footer>
+</body>
+</html>
